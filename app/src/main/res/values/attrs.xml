@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingEpisodeItem">
+        <attr name="isLoading" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="Error">
+        <attr name="visible" format="boolean" />
+        <attr name="msgError" format="string" />
+    </declare-styleable>
+</resources>

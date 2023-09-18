@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_episodes"
+    android:id="@+id/navigation_drawer">
+
+    <fragment
+        android:label="Episodes"
+        tools:layout="@layout/fragment_episodes"
+        android:name="com.study.drawer.view.EpisodesFragment"
+        android:id="@+id/nav_episodes">
+        <action
+            android:id="@+id/action_nav_episodes_to_nav_characters_by_episode"
+            app:destination="@id/nav_characters_by_episode" />
+    </fragment>
+
+    <fragment
+        android:label="CharacterByEpisode"
+        tools:layout="@layout/fragment_characters_by_episode"
+        android:id="@+id/nav_characters_by_episode"
+        android:name="com.study.drawer.view.CharacterByEpisodeFragment"
+        />
+
+    <fragment
+        android:label="Characters"
+        tools:layout="@layout/fragment_charcters"
+        android:name="com.study.drawer.view.CharactersFragment"
+        android:id="@+id/nav_characters">
+        <action
+            android:id="@+id/action_nav_characters_to_nav_character_detail"
+            app:destination="@id/nav_character_detail" />
+    </fragment>
+
+    <fragment
+        android:label="Character Detail"
+        tools:layout="@layout/fragment_character_detail"
+        android:id="@+id/nav_character_detail"
+        android:name="com.study.drawer.view.CharacterDetailFragment"
+        />
+
+    <fragment
+        android:label="Locations"
+        tools:layout="@layout/fragment_locations"
+        android:name="com.study.drawer.view.LocationsFragment"
+        android:id="@+id/nav_location">
+        <action
+            android:id="@+id/action_nav_location_to_nav_residents"
+            app:destination="@id/nav_residents" />
+    </fragment>
+
+
+    <fragment
+        android:name="com.study.drawer.view.ResidentsFragment"
+        tools:layout="@layout/fragment_residents"
+        android:id="@+id/nav_residents"
+        android:label="Residents"
+        />
+
+</navigation>

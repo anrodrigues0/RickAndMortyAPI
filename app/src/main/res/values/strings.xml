@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ricky And Morty</string>
+    <string name="name_character">Name</string>
+    <string name="status_character">Status</string>
+    <string name="specie_character">Specie</string>
+    <string name="origin_character">Origin</string>
+    <string name="location_character">Location</string>
+    <string name="episodes_by_character">Episodes</string>
+    <string name="characters">Characters</string>
+    <string name="see_residents">See Residents</string>
+
+    <string name="error">Oops… we had an error on the %1$s screen,\n try again later.</string>
+</resources>
